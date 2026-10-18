@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<!-- 明确指定输出类型为 Windows 应用程序可执行文件 -->
+		<OutputType>WinExe</OutputType>
+		<UseWindowsForms>true</UseWindowsForms>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<!-- 遮蔽 WindowsBase 版本冲突警告 -->
+		<NoWarn>MSB3277</NoWarn>
+		<Company>Lemon Studio</Company>
+		<Copyright>Copyright © 2026 Lemon Studio</Copyright>
+		<Version>1.2.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
+	</ItemGroup>
+
+</Project>
